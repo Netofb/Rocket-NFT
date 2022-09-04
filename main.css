@@ -1,0 +1,89 @@
+.first-main {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10rem auto 10rem auto;
+}
+
+@media (max-width: 1000px) {
+  .first-main {
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .bagde {
+    margin: 0 0 3rem 0;
+  }
+}
+
+.textinho {
+  max-width: 40ch;
+  margin-bottom: 3rem;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 100;
+}
+
+.artista-texto {
+  display: flex;
+  color: #fff;
+}
+
+.artistas-selecionados {
+  margin: 1rem 1rem 1rem 3rem;
+}
+
+.descubra {
+  max-width: 20ch;
+  font-weight: bold;
+  color: #fff;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 600px) {
+  .descubra {
+    font-size: 2rem;
+  }
+}
+.descubra strong {
+  color: #ff5b50;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.bagde {
+  max-width: 300px;
+  position: relative;
+  animation-name: subir;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes subir {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+.galerias {
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 10rem auto;
+  gap: 1rem;
+  justify-content: center;
+}
+@media (max-width: 1000px) {
+}
+
+.galerias img {
+  max-width: 307px;
+  border: solid gray 2px;
+}
